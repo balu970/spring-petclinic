@@ -1,0 +1,12 @@
+node ('UBUNTU')
+{
+stage ('GIT')
+{
+git 'https://github.com/balu970/spring-petclinic.git'
+}
+stage ('package')
+{
+sh 'mvn package'
+}
+
+}
